@@ -406,3 +406,18 @@ impl<F: Float> Inv for TfS<F>
         TfS::OpR1(Box::new(self), Complex::inv)
     }
 }
+
+impl<F: Float> Into<TfS<F>> for Complex<F>
+{
+    fn into(self) -> TfS<F>
+    {
+        TfS::Const(self)
+    }
+}
+impl<F: Float> From<F> for TfS<F>
+{
+    fn from(x: F) -> Self
+    {
+        TfS::Const(Complex::from(x))
+    }
+}
