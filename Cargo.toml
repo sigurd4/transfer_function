@@ -1,0 +1,14 @@
+[package]
+name = "transfer_function"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Transfer functions in s- and z-domain"
+repository = "https://github.com/sigurd4/transfer_function"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num = "0.4.0"
+array-init = "2.0.1"
+array-matrix = "0.1.2"
