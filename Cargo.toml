@@ -10,3 +10,4 @@ repository = "https://github.com/sigurd4/transfer_function"
 
 [dependencies]
 num = "0.4.0"
+array_math = "0.2.9"
